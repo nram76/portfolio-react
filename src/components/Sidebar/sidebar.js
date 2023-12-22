@@ -3,6 +3,7 @@ import LogoS from '../../assets/images/logo-s.png'
 import './sidebar.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons';
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 const Sidebar = () => (
  <div className='nav-bar'>
@@ -11,16 +12,41 @@ const Sidebar = () => (
         <p className='sub-logo' alt="naveenR">Naveen Ramanjulu</p>
     </Link>
     <nav>
-        <NavLink exact="true" activeclassname="active" to="/">
+        <NavLink
+         exact="true" 
+         activeclassname="active" 
+         to="/"
+        >
             <FontAwesomeIcon icon={faHome} color='#4d4d4e'/>
         </NavLink>
-        <NavLink exact="true" activeclassname="active" className="about-link" to="/about">
+        <NavLink
+         exact="true" 
+         activeclassname="active" 
+         className="about-link" 
+         to="/about"
+        >
             <FontAwesomeIcon icon={faUser} color='#4d4d4e'/>
         </NavLink>
-        <NavLink exact="true" activeclassname="active" className="contact-link" to="/contact">
+        <NavLink
+         exact="true" 
+         activeclassname="active" 
+         className="contact-link" 
+         to="/contact"
+        >
             <FontAwesomeIcon icon={faEnvelope} color='#4d4d4e'/>
         </NavLink>
     </nav>
+    <ul>
+        <li>
+            <a
+             target='_blank' 
+             rel='noreferrer'
+             href='https://www.linkedin.com/in/naveen-ramanjulu-01475073/'
+            >
+                <FontAwesomeIcon icon={faLinkedin} color='#4d4d4e' />
+            </a>
+        </li>
+    </ul>
  </div>
 );
 
