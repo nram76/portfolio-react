@@ -54,9 +54,9 @@
             }
 
             &:hover {
-                color: goldenrod
+                color: goldenrod;
 
-                svg {
+                svg{
                     opacity: 0;
                 }
 
@@ -64,6 +64,7 @@
                     opacity: 1;
                 }
             }
+
             &:after{
                 content: '';
                 font-size: 9px;
@@ -97,8 +98,8 @@
         }
 
         a.active{
-            &::after {
-                content: 'CONTACT';
+            svg{
+                color: goldenrod;
             }
         }
 
