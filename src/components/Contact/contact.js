@@ -7,7 +7,8 @@ import emailjs from '@emailjs/browser';
 const Contact = () => {
     const strArray = ['C','o','n','t','a','c','t',' ','M','e',];
     const [letterClass, setLetterClass] = useState('text-animate');
-    const form = useRef(); 
+    const [disabled, setDisabled] = useState(false);
+    const form = useRef();
 
     useEffect(()=> {
         setLetterClass('text-animate-hover')
@@ -15,18 +16,20 @@ const Contact = () => {
 
     const sendEmail = (e) => {
         e.preventDefault()
-    
+        setDisabled(true);
         emailjs
           .sendForm("service_ykutl2g","template_h68uvxt", form.current, 'imBNmvAh9wZuLiLaS')
           .then(
             () => {
-              alert('Message successfully sent!'+ `${form.current}`)
+              alert('Message successfully sent!');
               window.location.reload(false)
+              setDisabled(false);
             },
             () => {
               alert('Failed to send the message, please try again')
+              setDisabled(false);
             }
-          ).catch(e => console.error(e));
+          ).catch(e => {console.error(e); setDisabled(false)});
       }
 
     return (
@@ -49,12 +52,9 @@ const Contact = () => {
                 <div className="contact-form">
                     <form ref={form} onSubmit={sendEmail}>
                         <ul>
-                            <li className="half">
-                            <input placeholder="Name" type="text" id="name" name="name" required us />
-                            </li>
-                            <li className="half">
+                            <li>
                             <input
-                                placeholder="Email"
+                                placeholder=" Your Email"
                                 type="email"
                                 id="email"
                                 name="email"
@@ -79,7 +79,7 @@ const Contact = () => {
                             ></textarea>
                             </li>
                             <li>
-                            <input type="submit" className="flat-button" value="SEND" />
+                            <input type="submit" disabled={disabled} className="flat-button" value="SEND" />
                             </li>
                         </ul>
                     </form>
