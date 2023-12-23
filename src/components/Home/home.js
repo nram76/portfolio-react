@@ -11,6 +11,10 @@ const Home = () => {
     const jobArray = ['S','o','f','t','w','a','r','e',' ','D','e','v','e','l','o','p','e','r'];
 
 
+    useEffect(()=> {
+        setLetterClass('text-animate-hover')
+    }, [])
+
     
     return (
         <div className="container home-page">

@@ -11,7 +11,7 @@
     }
 
     h1 {
-        color: beige;
+        color: burlywood;
         font-size: 53px;
         margin: 0;
         font-family: 'Coolvetica';
@@ -20,7 +20,7 @@
         &::before {
             content: '<h1>';
             font-family: 'La Belle Aurore';
-            color: forestgreen;
+            color: goldenrod;
             font-size: 18px;
             position: absolute;
             margin-top: -40px;
@@ -31,7 +31,7 @@
         &::after {
             content: '</h1>';
             font-family: 'La Belle Aurore';
-            color: forestgreen;
+            color: goldenrod;
             font-size: 18px;
             position: absolute;
             margin-top: 18px;
@@ -69,5 +69,11 @@
             background: goldenrod;
             color: #333;
         }
+    }
+    .text-animate-hover {
+        &:hover {
+            color: white;
+        }
+
     }
 }
