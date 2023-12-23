@@ -6,8 +6,9 @@ import AnimatedLetters from '../AnimatedLetters/animatedLetters';
 const Home = () => {
     // useState for setting variables
     const [letterClass, setLetterClass] = useState('text-animate');
-    const nameArray = ['n','a','v','e','e','n'];
-    const jobArray = ['s','o','f','t','w','a','r','e',' ','d','e','v','e','l','o','p','e','r'];
+    const nameArray = ['N','a','v','e','e','n'];
+    const lastNameArray = [' ','R','a','m','a','n','j','u','l','u '];
+    const jobArray = ['S','o','f','t','w','a','r','e',' ','D','e','v','e','l','o','p','e','r'];
 
 
     
@@ -17,8 +18,9 @@ const Home = () => {
                 <h1>
                     <AnimatedLetters
                     letterClass={letterClass}
-                    strArray={nameArray}
+                    strArray={nameArray.concat(lastNameArray)}
                     idx={1}
+
                     />
                     <br/>
                     <AnimatedLetters
