@@ -79,9 +79,48 @@
 
     .profile{
         width: 30vw;
+        aspect-ratio: 1/1;
         float: right;
         margin-right: 10%;
-        border: 10px solid none;
+        border: 4px solid transparent;
         border-radius: 50%;
+        &:hover {
+            width: 30vw;
+            aspect-ratio: 1/1;
+            float: right;
+            margin-right: 10%;
+            border: 4px solid burlywood;
+            border-radius: 50%;
+            animation-name: borderlights;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            animation-duration: 4s;
+            cursor: pointer;
+        }
+
+    }
+    
+    @keyframes borderlights {
+        from,
+        to {
+            border: 4px solid transparent;
+        }
+        16% {
+            border: 4px solid burlywood;
+
+        }
+        33% {
+            border: 4px solid transparent;
+        }    
+        50% {
+            border: 4px solid burlywood;
+        }   
+        66% {
+            border: 4px solid transparent;
+
+        }    
+        83% {
+            border: 4px solid burlywood;
+        }
     }
 }
