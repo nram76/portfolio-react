@@ -86,7 +86,7 @@
         }
 
         p {
-           font-size: 13px;
+           font-size: 15px;
            color: white;
            font-weight: 300;
            min-width: fit-content;
@@ -100,12 +100,5 @@
             animation-delay: 1.2s;
            }
         }
-    }
-
-    .text-animate-hover {
-        &:hover {
-            color: white;
-        }
-
     }
 }

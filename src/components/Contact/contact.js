@@ -3,6 +3,9 @@ import AnimatedLetters from '../AnimatedLetters/animatedLetters';
 import './contact.scss';
 import { useEffect, useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMailBulk, faMailReply } from '@fortawesome/free-solid-svg-icons';
+import { faMailchimp } from '@fortawesome/free-brands-svg-icons';
 
 const Contact = () => {
     const strArray = ['C','o','n','t','a','c','t',' ','M','e',];
@@ -11,7 +14,9 @@ const Contact = () => {
     const form = useRef();
 
     useEffect(()=> {
-        setLetterClass('text-animate-hover')
+        setTimeout(() => {
+        setLetterClass('text-animate-hover');
+        }, 5000);
     }, []);
 
     const sendEmail = (e) => {
@@ -94,6 +99,7 @@ const Contact = () => {
                     </form>
                 </div>
             </div>
+                <FontAwesomeIcon icon={faMailchimp} color='white' className='sidemail'/>
         </div>
         <Loader type='pacman' />
         </>

@@ -72,9 +72,16 @@
       margin-right: 10px;
       cursor: pointer;
 
-      &:hover {
-        background: goldenrod;
-        color: #333;
+        &:hover {
+          background: goldenrod;
+          color: #333;
+      }
     }
-    }
+}
+
+.sidemail {
+  float: right;
+  color: burlywood;
+  margin-right: 40px;
+  height: 70vh;
 }
