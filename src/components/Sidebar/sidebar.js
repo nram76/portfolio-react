@@ -3,12 +3,12 @@ import LogoS from '../../assets/images/logo-s.png'
 import './sidebar.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons';
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faLinkedin, faReact } from '@fortawesome/free-brands-svg-icons';
 
 const Sidebar = () => (
  <div className='nav-bar'>
     <Link className='logo' to='/'>
-        <img src={LogoS} alt="logo" />
+        <FontAwesomeIcon className='icon' icon={faReact} color='#5ED4F4' />
         <p className='sub-logo' alt="naveenR">Naveen Ramanjulu</p>
     </Link>
     <nav>

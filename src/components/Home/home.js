@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import './home.scss'
 import { useEffect, useState } from 'react';
 import AnimatedLetters from '../AnimatedLetters/animatedLetters';
+import Profile from '../../assets/images/profile.png'
 import Loader from 'react-loaders';
 
 const Home = () => {
@@ -38,6 +39,9 @@ const Home = () => {
                 </h1>
                 <h2>FrontEnd Developer / JavaScript Expert / Nest Js Servers / Stripe / Openai / Azure DevOps</h2>
                 <Link to='/contact' className='flat-button' >Contact Me</Link>
+            </div>
+            <div className='profile-pic'>
+                <img src={Profile} className='profile' />
             </div>
         </div>
         <Loader type='pacman' />
