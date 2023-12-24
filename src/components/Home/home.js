@@ -37,6 +37,7 @@ const Home = () => {
                     strArray={jobArray}
                     idx={17}
                     />
+                    <br />
                     
                 </h1>
                 <h2>FrontEnd Developer / JavaScript Expert / Nest Js Servers / Stripe / Openai / Azure DevOps</h2>

@@ -2,8 +2,8 @@ import { Link, NavLink } from 'react-router-dom';
 import LogoS from '../../assets/images/logo-s.png'
 import './sidebar.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons';
-import { faGithub, faLinkedin, faReact } from '@fortawesome/free-brands-svg-icons';
+import { faBlog, faDriversLicense, faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons';
+import { faDeskpro, faDochub, faDropbox, faGithub, faGoodreads, faGoogleDrive, faLinkedin, faReact } from '@fortawesome/free-brands-svg-icons';
 
 const Sidebar = () => (
  <div className='nav-bar'>
@@ -37,6 +37,15 @@ const Sidebar = () => (
         </NavLink>
     </nav>
     <ul>
+    <li>
+            <a
+             target='_blank' 
+             rel='noreferrer'
+             href='https://docs.google.com/document/d/1_40TPKJBC73lFQsVpqazPONS0uVZ7zVF/'
+            >
+                <FontAwesomeIcon icon={faGoogleDrive} color='#4d4d4e' alt='resume'/>
+            </a>
+        </li>
         <li>
             <a
              target='_blank' 
