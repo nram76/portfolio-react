@@ -77,3 +77,82 @@
         transform: rotateX(90deg);
     }
 }
+
+.projects {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    .project-desc {
+        background-color:cadetblue;
+        border: 3px solid transparent;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 8px;
+        img {
+            width: 10vw;
+            border: 0;
+            border-radius: 5px;
+        }
+
+        a {
+            width: 5vw;
+            padding: 5px;
+            border: 1px solid burlywood;
+            border-radius: 3px;
+            text-align: center;
+            font-weight: 400;
+            text-anchor: middle;
+            color: white;
+            text-decoration: none;
+
+            &:hover {
+            width: 5vw;
+            padding: 5px;
+            border: 1px solid burlywood;
+            background-color: burlywood;
+            border-radius: 3px;
+            text-align: center;
+            font-weight: 400;
+            color: white;
+            text-decoration: none;
+            animation-name: borderlights;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            animation-duration: 4s;
+            cursor: pointer;
+            }
+        }
+
+    }
+}
+
+@keyframes borderlights {
+    from,
+    to {
+        border: 1px solid transparent;
+        font-weight: 400;
+    }
+    16% {
+        border: 2px solid burlywood;
+        font-weight: 600;
+
+    }
+    33% {
+        border: 1px solid transparent;
+        font-weight: 400;
+    }    
+    50% {
+        border: 2px solid burlywood;
+        font-weight: 600;
+    }   
+    66% {
+        border: 1px solid transparent;
+        font-weight: 400;
+    }    
+    83% {
+        border: 2px solid burlywood;
+        font-weight: 600;
+    }
+}

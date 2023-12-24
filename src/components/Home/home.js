@@ -40,9 +40,11 @@ const Home = () => {
                 <h2>FrontEnd Developer / JavaScript Expert / Nest Js Servers / Stripe / Openai / Azure DevOps</h2>
                 <Link to='/contact' className='flat-button' >Contact Me</Link>
             </div>
+            <Link to='/about'>
             <div className='profile-pic'>
                 <img src={Profile} className='profile' />
             </div>
+            </Link>
         </div>
         <Loader type='pacman' />
         </>

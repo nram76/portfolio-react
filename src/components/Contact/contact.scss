@@ -57,12 +57,12 @@
     }
   
     .flat-button {
-      color: #ffd700;
+      color: goldenrod;
       font-size: 11px;
       letter-spacing: 3px;
       text-decoration: none;
       padding: 8px 10px;
-      border: 1px solid #ffd700;
+      border: 1px solid goldenrod;
       float: left;
       border-radius: 4px;
       background: 0 0;
@@ -71,5 +71,10 @@
       text-align: center;
       margin-right: 10px;
       cursor: pointer;
+
+      &:hover {
+        background: goldenrod;
+        color: #333;
+    }
     }
 }

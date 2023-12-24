@@ -3,6 +3,10 @@ import AnimatedLetters from '../AnimatedLetters/animatedLetters';
 import { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngular, faCss3, faGitAlt, faHtml5, faNodeJs, faReact } from '@fortawesome/free-brands-svg-icons';
+import TTT1 from '../../assets/projects/ttt-1.png';
+import TTT2 from '../../assets/projects/ttt-2.png';
+import TTD1 from '../../assets/projects/ttd-1.png';
+import TTD2 from '../../assets/projects/ttd-2.png';
 import Loader from 'react-loaders';
 
 const About = () => {
@@ -36,6 +40,35 @@ const About = () => {
                     maintaing C# APIs as well as integragting NestJs servers and Apis with 
                     technologies such as Stripe and OpenAi
                 </p>
+                <p>
+                    {' '}
+                    Below are several Projects that I have worked in my tenure with the Oklahoma
+                    Blood Institute.
+                </p>
+                <div className='projects'>
+                    <div className='project-desc'>
+                        <h3>Tic-Tac-Trivia</h3>
+                        <img src={TTT1} />
+                        <p>
+                            Tic Tac trivia is an html project 
+                            integrating an angular framework and
+                            firebase functions and the firebase SDK.
+                            This is a trivia game with responsive design.
+                        </p>
+                        <a href='https://tic-tac-trivia.com' target='_new'>Visit</a>
+                    </div>
+                    <div className='project-desc'>
+                        <h3>Thank the Donor</h3>
+                        <img src={TTD1} />
+                        <p>
+                            Thank the Donor is an electron app with an
+                            info site which is integrated with an angular framework
+                            as well. The app makes use of a rest api integrated with C# 
+                            ASP.net core. 
+                        </p>
+                        <a href='https://info.thankthedonor.org' target='_new'>Visit</a>
+                    </div>               
+                </div>
             </div>
 
             <div className='stage-cube-cont'>
