@@ -1,9 +1,8 @@
 import { Link, NavLink } from 'react-router-dom';
-import LogoS from '../../assets/images/logo-s.png'
 import './sidebar.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBlog, faDriversLicense, faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons';
-import { faDeskpro, faDochub, faDropbox, faGithub, faGoodreads, faGoogleDrive, faLinkedin, faReact } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons';
+import { faGithub, faGoogleDrive, faLinkedin, faReact } from '@fortawesome/free-brands-svg-icons';
 
 const Sidebar = () => (
  <div className='nav-bar'>

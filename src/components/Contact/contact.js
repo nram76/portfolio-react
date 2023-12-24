@@ -4,7 +4,6 @@ import './contact.scss';
 import { useEffect, useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMailBulk, faMailReply } from '@fortawesome/free-solid-svg-icons';
 import { faMailchimp } from '@fortawesome/free-brands-svg-icons';
 
 const Contact = () => {
