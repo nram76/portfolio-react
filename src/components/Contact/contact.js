@@ -52,12 +52,21 @@ const Contact = () => {
                 <div className="contact-form">
                     <form ref={form} onSubmit={sendEmail}>
                         <ul>
-                            <li>
+                        <li className='half'>
+                            <input
+                                placeholder=" Your Name"
+                                type="text"
+                                id="name"
+                                name="user_name"
+                                required
+                            />
+                            </li>
+                            <li className='half'>
                             <input
                                 placeholder=" Your Email"
                                 type="email"
                                 id="email"
-                                name="email"
+                                name="user_email"
                                 required
                             />
                             </li>
