@@ -76,7 +76,7 @@ const About = () => {
                             as well. The app makes use of a rest api integrated with C# 
                             ASP.net core. 
                         </p>
-                        <a href='https://apps.apple.com/us/app/donable/id1634709654' target='_new'>Visit</a>
+                        <a href='https://apps.apple.com/us/app/donable/id1634709654' target='_new' style={{marginTop: '15%'}}>Visit</a>
                     </div>                
                 </div>
             </div>
