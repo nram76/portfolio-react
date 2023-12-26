@@ -46,6 +46,8 @@ const Contact = () => {
                     strArray={strArray} 
                     idx={15}
                     />
+                <FontAwesomeIcon icon={faMailchimp} color='white' className='sidemail'/>
+
                 </h1>
                 <p>
                     I am currently interested in opportunities for 
@@ -98,7 +100,6 @@ const Contact = () => {
                     </form>
                 </div>
             </div>
-                <FontAwesomeIcon icon={faMailchimp} color='white' className='sidemail'/>
         </div>
         <Loader type='pacman' />
         </>

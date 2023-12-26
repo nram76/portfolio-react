@@ -4,9 +4,8 @@ import { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngular, faCss3, faGitAlt, faHtml5, faNodeJs, faReact } from '@fortawesome/free-brands-svg-icons';
 import TTT1 from '../../assets/projects/ttt-1.png';
-import TTT2 from '../../assets/projects/ttt-2.png';
 import TTD1 from '../../assets/projects/ttd-1.png';
-import TTD2 from '../../assets/projects/ttd-2.png';
+import Don from '../../assets/projects/Donable-2.png'
 import Loader from 'react-loaders';
 
 const About = () => {
@@ -48,7 +47,7 @@ const About = () => {
                 <div className='projects'>
                     <div className='project-desc'>
                         <h3>Tic-Tac-Trivia</h3>
-                        <img src={TTT1} />
+                        <img src={TTT1} alt='Tic Tac Trivia'/>
                         <p>
                             Tic Tac trivia is an html project 
                             integrating an angular framework and
@@ -59,7 +58,7 @@ const About = () => {
                     </div>
                     <div className='project-desc'>
                         <h3>Thank the Donor</h3>
-                        <img src={TTD1} />
+                        <img src={TTD1} alt='Thank The Donor'/>
                         <p>
                             Thank the Donor is an electron app with an
                             info site which is integrated with an angular framework
@@ -67,7 +66,18 @@ const About = () => {
                             ASP.net core. 
                         </p>
                         <a href='https://info.thankthedonor.org' target='_new'>Visit</a>
-                    </div>               
+                    </div>
+                    <div className='project-desc'>
+                        <h3>Donable</h3>
+                        <img src={Don} alt='Donable' />
+                        <p>
+                            Thank the Donor is an electron app with an
+                            info site which is integrated with an angular framework
+                            as well. The app makes use of a rest api integrated with C# 
+                            ASP.net core. 
+                        </p>
+                        <a href='https://apps.apple.com/us/app/donable/id1634709654' target='_new'>Visit</a>
+                    </div>                
                 </div>
             </div>
 
