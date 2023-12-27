@@ -71,10 +71,10 @@ const About = () => {
                         <h3>Donable</h3>
                         <img src={Don} alt='Donable' />
                         <p>
-                            Thank the Donor is an electron app with an
-                            info site which is integrated with an angular framework
-                            as well. The app makes use of a rest api integrated with C# 
-                            ASP.net core. 
+                        Donable was created to seek out those who want to donate blood, 
+                        but may not know how. Donable agents take 
+                        the burden off of the blood donor, making blood
+                        donation efficient.
                         </p>
                         <a href='https://apps.apple.com/us/app/donable/id1634709654' target='_new' style={{marginTop: '15%'}}>Visit</a>
                     </div>                
