@@ -69,14 +69,14 @@ const About = () => {
                     </div>
                     <div className='project-desc'>
                         <h3>Donable</h3>
-                        <img src={Don} alt='Donable' />
+                        <img src={Don} alt='Donable' style={{paddingBottom:'15%'}}/>
                         <p>
                         Donable was created to seek out those who want to donate blood, 
                         but may not know how. Donable agents take 
                         the burden off of the blood donor, making blood
                         donation efficient.
                         </p>
-                        <a href='https://apps.apple.com/us/app/donable/id1634709654' target='_new' style={{marginTop: '15%'}}>Visit</a>
+                        <a href='https://apps.apple.com/us/app/donable/id1634709654' target='_new'>Visit</a>
                     </div>                
                 </div>
             </div>
